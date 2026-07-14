@@ -7,6 +7,18 @@
             <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/PerpustakaanApp/src/view/Main.java</file>
             <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/PerpustakaanApp/src/model/Buku.java</file>
             <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/PerpustakaanApp/src/dao/BukuDAO.java</file>
+            <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/PerpustakaanApp/src/view/FormBuku.java</file>
+            <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/PerpustakaanApp/src/model/Anggota.java</file>
+            <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/PerpustakaanApp/src/model/Peminjaman.java</file>
+            <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/PerpustakaanApp/src/dao/PeminjamanDAO.java</file>
+            <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/PerpustakaanApp/src/view/FormPeminjaman.java</file>
+            <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/PerpustakaanApp/src/view/FormAnggota.java</file>
+            <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/PerpustakaanApp/src/view/MenuUtama.java</file>
+            <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/PerpustakaanApp/src/view/FormLogin.java</file>
+            <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/PerpustakaanApp/src/dao/UserDAO.java</file>
+            <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/PerpustakaanApp/src/view/FormRegister.java</file>
+            <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/PerpustakaanApp/src/session/Session.java</file>
+            <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/PerpustakaanApp/src/dao/AnggotaDAO.java</file>
         </group>
     </open-files>
 </project-private>

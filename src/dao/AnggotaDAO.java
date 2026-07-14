@@ -118,4 +118,25 @@ public class AnggotaDAO {
             System.out.println("Error update: " + e.getMessage());
         }
     }
+    
+    public int getTotalAnggota(){
+        
+        String sql = "SELECT COUNT(*) FROM anggota";
+        
+        try{
+            
+            PreparedStatement ps = conn.prepareStatement(sql);
+            
+            ResultSet rs = ps.executeQuery();
+            
+            if(rs.next()){
+                return rs.getInt(1);
+            }
+            
+        }catch(Exception e){
+            e.printStackTrace();
+        }
+        
+        return 0;
+    }
 }

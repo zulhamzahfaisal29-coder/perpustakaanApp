@@ -173,6 +173,87 @@ public class BukuDAO {
             System.out.println("Error delete: " + e.getMessage());
         }
     }
+    
+    public void KurangiStok(int idBuku){
+        
+        System.out.println("Kurangi stok buku ID: " +idBuku);
+        
+        String sql = "UPDATE buku SET stok = stok - 1 WHERE id_buku=?";
+        
+        try{
+            
+            PreparedStatement ps = conn.prepareStatement(sql);
+            
+            ps.setInt(1, idBuku);
+            
+            int hasil = ps.executeUpdate();
+            
+            System.out.println("Baris yang diupdate: " + hasil);
+            
+        }catch(Exception e){
+            System.out.println("Error stok: "+ e.getMessage());
+        }
+    }
+    
+    public int getStok(int idBuku){
+        
+        String sql = "SELECT stok FROM buku WHERE id_buku=?";
+         try{
+             
+             PreparedStatement ps = conn.prepareStatement(sql);
+             
+             ps.setInt(1, idBuku);
+             
+             ResultSet rs = ps.executeQuery();
+             
+             if(rs.next()){
+                 return rs.getInt("stok");
+             }
+             
+         }catch(Exception e){
+             System.out.println("Error cek stok: " + e.getMessage());
+         }
+         return 0;
+    }
+    
+    public void tambahStok(int idBuku){
+        
+        String sql = "UPDATE buku SET stok = stok + 1 WHERE id_buku=?";
+        
+        try{
+            
+            PreparedStatement ps = conn.prepareStatement(sql);
+            
+            ps.setInt(1, idBuku);
+            
+            ps.executeUpdate();
+            
+        }catch(Exception e){
+            System.out.println("Error tambah stok: " + e.getMessage());
+        }
+        
+    }
+    
+    public int getTotalBuku(){
+        
+        String sql = "SELECT COUNT(*) FROM buku";
+        
+        try{
+            
+            PreparedStatement ps = conn.prepareStatement(sql);
+            
+            ResultSet rs = ps.executeQuery();
+            
+            if(rs.next()){
+                return rs.getInt(1);
+            }
+            
+        }catch(Exception e){
+            e.printStackTrace();
+        }
+        
+        return 0;
+    }
 }
     
     
